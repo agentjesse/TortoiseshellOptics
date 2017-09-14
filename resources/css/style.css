@@ -46,17 +46,17 @@ body{
 
 .holder.flex{
   justify-content: flex-end;
-  position: relative;
-  left: 2rem;
 }
 
 .floatText{
+  display: block;
   margin-top: 10rem;
   padding: 1.5rem 5rem;
   background-color: #fff;
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
+  margin-right: -2rem;
 }
 
 /*services section*/
@@ -113,4 +113,24 @@ footer img{
   height: 1.5rem;
   width: auto;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+
+/*media queries*/
+
+/*1024px originally but lowered to 950 to show on iP5*/
+/*dont forget space between and and bracket*/
+@media only screen and (max-width:950px){
+
+  .banner{
+    padding-top: 0rem;
+    height: 22rem;
+  }
+  .floatText{
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin-right: 2rem;
+  }
+
 }
