@@ -18,19 +18,45 @@ body{
 }
 
 /*banner and content in it*/
-.logoContain{
-  color: #fff;
-  display: flex;
-  background-color: cadetblue;
-}
-
-.floatText{
-  background-color: #fff;
-}
-
 .banner{
   background: url("../images/glassesBkg.png") no-repeat center/cover;
   height: 30rem;
+  padding-top: 1rem;
+}
+
+.logoContain{
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 1rem 0;
+}
+.logoContain span{
+  display: flex;
+  align-items: center;
+}
+.logoContain img{
+  height: 1.5rem;
+  padding: 0 1rem 0 2rem;
+}
+.menu span{
+  display: inline;
+  padding-right: 2rem;
+}
+
+.holder.flex{
+  justify-content: flex-end;
+  position: relative;
+  left: 2rem;
+}
+
+.floatText{
+  margin-top: 10rem;
+  padding: 1.5rem 5rem;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
 }
 
 /*services section*/
