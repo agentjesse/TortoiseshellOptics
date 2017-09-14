@@ -1,9 +1,90 @@
 /*set base font size for rem*/
 html{
-  /*font-size: 18px;*/
+  font-size: 18px;
 }
 
 /*set base font*/
 body{
-  /*font-family:helvetica,sans-serif;*/
+  font-family:helvetica,sans-serif;
+  color:black;
+  /*background-color: gray;*/
+}
+
+/*class to use to make flex containers*/
+.flex{
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*banner and content in it*/
+.logoContain{
+  color: #fff;
+  display: flex;
+  background-color: cadetblue;
+}
+
+.floatText{
+  background-color: #fff;
+}
+
+.banner{
+  background: url("../images/glassesBkg.png") no-repeat center/cover;
+  height: 30rem;
+}
+
+/*services section*/
+.services{
+  justify-content: center;
+}
+figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+  height: 8rem;
+  width: 5rem;
+}
+figcaption{
+  /*display: block;*/
+  /*align-self: flex-end;*/
+  text-align: center;
+}
+
+figure img{
+  display: block;
+  height: auto;
+  width: 4rem;
+  /*width: 5rem;*/
+}
+
+/*business info section*/
+.bizInfo{
+  justify-content: center;
+}
+.bizInfo div{
+  margin-left: 5%;
+  margin-bottom: 5rem;
+  width:35%;
+}
+
+h3{
+  width: 10rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+}
+
+/*copyright footer*/
+footer{
+  align-items: center;
+  background-color: azure;
+}
+
+footer img{
+  height: 1.5rem;
+  width: auto;
+  padding: 4rem 1rem 4rem 4rem;
 }
