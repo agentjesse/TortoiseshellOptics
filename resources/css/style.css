@@ -7,7 +7,8 @@ html{
 body{
   font-family:helvetica,sans-serif;
   color:black;
-  /*background-color: gray;*/
+  /*improve readability*/
+  line-height: 1.4;
 }
 
 /*class to use to make flex containers*/
@@ -42,6 +43,10 @@ body{
 .menu span{
   display: inline;
   padding-right: 2rem;
+}
+/*hide last element in nav*/
+.menu span:last-child{
+  display: none;
 }
 
 .holder.flex{
@@ -121,7 +126,9 @@ footer img{
 /*1024px originally but lowered to 950 to show on iP5*/
 /*dont forget space between and and bracket*/
 @media only screen and (max-width:950px){
-
+  .flex{
+    width: 100%;
+  }
   .banner{
     padding-top: 0rem;
     height: 22rem;
@@ -133,4 +140,56 @@ footer img{
     margin-right: 2rem;
   }
 
+}
+
+@media only screen and (max-width:620px) {
+  .menu span{
+    display: none;
+  }
+  .menu span:last-child{
+    display: block;
+  }
+
+  .banner{
+    height: 17rem;
+    background-position: 20%;
+  }
+  .floatText{
+    margin-top: 9rem;
+    padding: 0.8rem 0;/*i prefer 0.8rem not 1*/
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .services{
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+  figure{
+    margin: 0.77rem;
+    font-size: 0.77rem;
+    height: auto;
+  }
+  figure img{
+    margin-bottom: 1rem;
+  }
+
+  .bizInfo{
+    flex-direction: column;
+  }
+  .bizInfo div{
+    width: 100%;
+    margin: 0 auto;
+  }
+  h3{
+    width: 100%;
+  }
+  p{
+    margin: 1rem auto 4rem;
+    font-size: 0.77rem;
+    padding: 1rem;
+  }
 }
