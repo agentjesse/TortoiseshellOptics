@@ -13,8 +13,6 @@ body{
 
 /*class to use to make flex containers*/
 .flex{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 960px;
   margin: 0 auto;
@@ -29,23 +27,14 @@ body{
 
 .logoContain{
   color: #fff;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: cadetblue;
   padding: 1rem 0;
 }
 .logoContain span{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .logoContain img{
   height: 1.5rem;
@@ -61,9 +50,7 @@ body{
 }
 
 .holder.flex{
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .floatText{
@@ -79,24 +66,13 @@ body{
 
 /*services section*/
 .services{
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 figure{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin: 3rem;
   height: 8rem;
   width: 5rem;
@@ -116,9 +92,7 @@ figure img{
 
 /*business info section*/
 .bizInfo{
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .bizInfo div{
   margin-left: 5%;
@@ -136,10 +110,7 @@ h3{
 
 /*copyright footer*/
 footer{
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
+  align-items: center;
   background-color: azure;
 }
 
@@ -194,14 +165,8 @@ footer img{
   }
 
   .services{
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-                -ms-grid-row-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    flex-direction: column;
     padding: 3rem 0;
   }
   figure{
@@ -214,10 +179,7 @@ footer img{
   }
 
   .bizInfo{
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .bizInfo div{
     width: 100%;
